@@ -41,7 +41,7 @@ xattr -dr com.apple.quarantine "/Applications/Hormus - Database Client.app"
 3. Run the helper script in this tap repo:
 
 ```bash
-./scripts/update-cask.sh 0.1.0 "/path/to/Hormus - Database Client-0.1.0-arm64-mac.zip"
+./scripts/update-cask.sh 0.1.1 0.1.0 "/path/to/Hormus - Database Client-0.1.0-arm64-mac.zip"
 ```
 
 4. Commit and push the updated cask to `homebrew-hormus`.
@@ -49,5 +49,6 @@ xattr -dr com.apple.quarantine "/Applications/Hormus - Database Client.app"
 ## Notes
 
 - The current cask supports Apple Silicon (`arm64`) Macs only.
-- The URL format assumes release assets are uploaded to:
-  `https://github.com/abhilashr1/hormus/releases/tag/v<version>`
+- The cask supports GitHub tag version and app artifact version being different.
+- Current mapping is:
+  GitHub release tag `v0.1.1` with macOS artifact `Hormus - Database Client-0.1.0-arm64-mac.zip`
