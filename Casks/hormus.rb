@@ -2,9 +2,9 @@ cask "hormus" do
   arch arm: "arm64"
 
   version "0.1.1,0.1.0"
-  sha256 arm: "9090277669c00a867784297f484c95b827a426588ff07cfc1953950c393044b8"
+  sha256 arm: "84acf59353781d9bbecf95fc8bc0c5f440bcb9a616976d50e6caaf2d1906f392"
 
-  url "https://github.com/abhilashr1/hormus/releases/download/v#{version.csv.first}/Hormus%20-%20Database%20Client-#{version.csv.second}-#{arch}-mac.zip",
+  url "https://github.com/abhilashr1/hormus/releases/download/v#{version.csv.first}/Hormus.-.Database.Client-#{version.csv.second}-#{arch}.dmg",
       verified: "github.com/abhilashr1/hormus/"
   name "Hormus"
   desc "Developer-first desktop database client"
